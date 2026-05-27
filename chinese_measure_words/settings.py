@@ -89,8 +89,8 @@ DATABASES = {
         'NAME': 'chinese_measure_words',      # 刚才创建的数据库名
         'USER': 'lihaizhen',     # 刚才创建的用户名
         'PASSWORD': 'j4S1yw5Kh44JiA==', # 刚才设置的密码
-        'HOST': '43.173.105.225',         # 数据库服务器地址（本地）
-        # 'HOST': 'localhost',         # 数据库服务器地址（服务器）
+        # 'HOST': '43.173.105.225',         # 数据库服务器地址（本地）
+        'HOST': 'localhost',         # 数据库服务器地址（服务器）
         'PORT': '3306',              # MySQL 默认端口
         # 可选：设置严格模式，避免数据截断等问题
         'OPTIONS': {
