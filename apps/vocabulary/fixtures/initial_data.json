@@ -1,0 +1,145 @@
+[
+  {
+    "model": "vocabulary.level",
+    "pk": 1,
+    "fields": { "name": "HSK1", "order": 1 }
+  },
+  {
+    "model": "vocabulary.level",
+    "pk": 2,
+    "fields": { "name": "HSK2", "order": 2 }
+  },
+  {
+    "model": "vocabulary.level",
+    "pk": 3,
+    "fields": { "name": "HSK3", "order": 3 }
+  },
+  {
+    "model": "vocabulary.level",
+    "pk": 4,
+    "fields": { "name": "HSK4", "order": 4 }
+  },
+
+  {
+    "model": "vocabulary.category",
+    "pk": 1,
+    "fields": { "level": 1, "name": "基础物品", "order": 1 }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 2,
+    "fields": { "level": 1, "name": "饮食相关", "order": 2 }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 3,
+    "fields": { "level": 2, "name": "服饰穿戴", "order": 1 }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 4,
+    "fields": { "level": 2, "name": "出行交通", "order": 2 }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 5,
+    "fields": { "level": 3, "name": "家居日用", "order": 1 }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 6,
+    "fields": { "level": 4, "name": "公共设施", "order": 1 }
+  },
+
+  {
+    "model": "vocabulary.word",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "chinese": "书",
+      "pinyin": "shū",
+      "english": "book",
+      "measure_word": "本",
+      "example": "一本书",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "chinese": "笔",
+      "pinyin": "bǐ",
+      "english": "pen",
+      "measure_word": "支",
+      "example": "一支笔",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 3,
+    "fields": {
+      "category": 2,
+      "chinese": "水",
+      "pinyin": "shuǐ",
+      "english": "water",
+      "measure_word": "杯",
+      "example": "一杯水",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 4,
+    "fields": {
+      "category": 3,
+      "chinese": "衣服",
+      "pinyin": "yī fu",
+      "english": "clothes",
+      "measure_word": "件",
+      "example": "一件衣服",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 5,
+    "fields": {
+      "category": 4,
+      "chinese": "车",
+      "pinyin": "chē",
+      "english": "car",
+      "measure_word": "辆",
+      "example": "一辆车",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 6,
+    "fields": {
+      "category": 5,
+      "chinese": "镜子",
+      "pinyin": "jìng zi",
+      "english": "mirror",
+      "measure_word": "面",
+      "example": "一面镜子",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 7,
+    "fields": {
+      "category": 6,
+      "chinese": "电梯",
+      "pinyin": "diàn tī",
+      "english": "elevator",
+      "measure_word": "部",
+      "example": "一部电梯",
+      "order": 1
+    }
+  }
+]

@@ -1,0 +1,88 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <list>
+          <option value="altgraph" />
+          <option value="antiorm" />
+          <option value="Automat" />
+          <option value="ci-info" />
+          <option value="click" />
+          <option value="configobj" />
+          <option value="configparser" />
+          <option value="constantly" />
+          <option value="cssselect" />
+          <option value="cycler" />
+          <option value="db" />
+          <option value="django-mama-cas" />
+          <option value="docutils" />
+          <option value="etelemetry" />
+          <option value="filelock" />
+          <option value="future" />
+          <option value="hyperlink" />
+          <option value="incremental" />
+          <option value="kiwisolver" />
+          <option value="looseversion" />
+          <option value="magento" />
+          <option value="magento-python" />
+          <option value="matplotlib" />
+          <option value="mssql-django" />
+          <option value="Naked" />
+          <option value="networkx" />
+          <option value="nibabel" />
+          <option value="nipype" />
+          <option value="OdooRPC" />
+          <option value="packaging" />
+          <option value="parsel" />
+          <option value="pathlib" />
+          <option value="pefile" />
+          <option value="Protego" />
+          <option value="prov" />
+          <option value="psycopg2" />
+          <option value="pyasn1" />
+          <option value="pyasn1-modules" />
+          <option value="pycryptodomex" />
+          <option value="PyDispatcher" />
+          <option value="pydot" />
+          <option value="Pygments" />
+          <option value="PyHamcrest" />
+          <option value="PyInstaller" />
+          <option value="PyMuPDF" />
+          <option value="pyodbc" />
+          <option value="pyOpenSSL" />
+          <option value="pypiwin32" />
+          <option value="PyQt5" />
+          <option value="pyqt5-plugins" />
+          <option value="PyQt5-Qt5" />
+          <option value="PyQt5-sip" />
+          <option value="pyqt5-tools" />
+          <option value="PySide2" />
+          <option value="python-dotenv" />
+          <option value="python-magento" />
+          <option value="python-memcached" />
+          <option value="pywin32" />
+          <option value="pywin32-ctypes" />
+          <option value="pyxnat" />
+          <option value="PyYAML" />
+          <option value="qt5-applications" />
+          <option value="qt5-tools" />
+          <option value="queuelib" />
+          <option value="rarfile" />
+          <option value="rdflib" />
+          <option value="scipy" />
+          <option value="Scrapy" />
+          <option value="service-identity" />
+          <option value="shellescape" />
+          <option value="shiboken2" />
+          <option value="traits" />
+          <option value="Twisted" />
+          <option value="unrar" />
+          <option value="w3lib" />
+          <option value="xpinyin" />
+          <option value="zope.interface" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

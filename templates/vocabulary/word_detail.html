@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ word.chinese }} - 汉语量词图鉴</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #fff;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        .header {
+            padding: 30px 0 10px;
+            text-align: center;
+        }
+
+        .breadcrumb {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(6px);
+            border-radius: 10px;
+        }
+
+        .breadcrumb-item a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .breadcrumb-item.active {
+            color: #f8f9fa;
+        }
+
+        .card-detail {
+            background: rgba(255,255,255,0.95);
+            color: #333;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+            padding: 40px;
+        }
+
+        .chinese {
+            font-size: 4.5rem;
+            font-weight: bold;
+            color: #764ba2;
+        }
+
+        .pinyin {
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .english {
+            font-size: 1.3rem;
+            color: #666;
+        }
+
+        .measure {
+            display: inline-block;
+            background: #667eea;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .example {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 5px solid #764ba2;
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+
+        .btn-audio {
+            width: 140px;
+        }
+
+        .word-image {
+            max-height: 260px;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb px-3 py-2">
+                <li class="breadcrumb-item"><a href="/">首页</a></li>
+                <li class="breadcrumb-item">
+                    <a href="/{{ word.category.level.name }}/">{{ word.category.level.name }}</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{% url 'vocabulary:category' word.category.id %}">{{ word.category.name }}</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">{{ word.chinese }}</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="container pb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card-detail">
+
+                <div class="row align-items-center">
+                    <!-- 文字区 -->
+                    <div class="col-md-7 text-center text-md-start">
+                        <div class="chinese">{{ word.chinese }}</div>
+                        <div class="pinyin mt-2">{{ word.pinyin }}</div>
+                        <div class="english mt-1">{{ word.english }}</div>
+
+                        <div class="mt-3">
+                            <span class="measure">量词：{{ word.measure_word }}</span>
+                        </div>
+
+                        {% if word.example %}
+                        <div class="example">
+                            {{ word.example }}
+                        </div>
+                        {% endif %}
+
+                        <!-- 发音按钮 -->
+                        <div class="mt-4 d-flex gap-3 flex-wrap">
+                            {% if word.audio_zh %}
+                            <button class="btn btn-success btn-audio" onclick="playAudio('{{ word.audio_zh.url }}')">
+                                🔊 中文发音
+                            </button>
+                            {% endif %}
+
+                            {% if word.audio_en %}
+                            <button class="btn btn-outline-primary btn-audio" onclick="playAudio('{{ word.audio_en.url }}')">
+                                🔊 English
+                            </button>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <!-- 图片区 -->
+                    <div class="col-md-5 text-center mt-4 mt-md-0">
+                        {% if word.image %}
+                            <img src="{{ word.image.url }}" class="img-fluid word-image" alt="{{ word.chinese }}">
+                        {% else %}
+                            <div class="text-muted">暂无图片</div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- 返回 -->
+                <div class="mt-5 text-center">
+                    <a href="{% url 'vocabulary:category' word.category.id %}" class="btn btn-outline-secondary">
+                        ← 返回词汇列表
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<audio id="player" style="display:none;"></audio>
+
+<script>
+    function playAudio(url) {
+        const player = document.getElementById('player');
+        player.src = url;
+        player.play();
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

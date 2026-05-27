@@ -1,0 +1,880 @@
+[
+  {
+    "model": "vocabulary.level",
+    "pk": 1,
+    "fields": {
+      "name": "HSK1",
+      "slug": "hsk1",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.level",
+    "pk": 2,
+    "fields": {
+      "name": "HSK2",
+      "slug": "hsk2",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.level",
+    "pk": 3,
+    "fields": {
+      "name": "HSK3",
+      "slug": "hsk3",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.level",
+    "pk": 4,
+    "fields": {
+      "name": "HSK4",
+      "slug": "hsk4",
+      "order": 4
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 1,
+    "fields": {
+      "level": 1,
+      "name": "基础物品",
+      "slug": "ji-chu-wu-pin",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 2,
+    "fields": {
+      "level": 1,
+      "name": "饮食相关",
+      "slug": "yin-shi-xiang-guan",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 3,
+    "fields": {
+      "level": 2,
+      "name": "服饰穿戴",
+      "slug": "fu-shi-chuan-dai",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 4,
+    "fields": {
+      "level": 2,
+      "name": "出行交通",
+      "slug": "chu-xing-jiao-tong",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 5,
+    "fields": {
+      "level": 2,
+      "name": "其他物品",
+      "slug": "qi-ta-wu-pin",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 6,
+    "fields": {
+      "level": 3,
+      "name": "家居日用",
+      "slug": "jia-ju-ri-yong",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 7,
+    "fields": {
+      "level": 3,
+      "name": "学习办公",
+      "slug": "xue-xi-ban-gong",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 8,
+    "fields": {
+      "level": 3,
+      "name": "饮食食材",
+      "slug": "yin-shi-shi-cai",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 9,
+    "fields": {
+      "level": 3,
+      "name": "户外运动",
+      "slug": "hu-wai-yun-dong",
+      "order": 4
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 10,
+    "fields": {
+      "level": 4,
+      "name": "购物商品",
+      "slug": "gou-wu-shang-pin",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 11,
+    "fields": {
+      "level": 4,
+      "name": "日用工具",
+      "slug": "ri-yong-gong-ju",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 12,
+    "fields": {
+      "level": 4,
+      "name": "公共设施",
+      "slug": "gong-gong-she-shi",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 13,
+    "fields": {
+      "level": 4,
+      "name": "文体娱乐",
+      "slug": "wen-ti-yu-le",
+      "order": 4
+    }
+  },
+  {
+    "model": "vocabulary.category",
+    "pk": 14,
+    "fields": {
+      "level": 4,
+      "name": "综合类",
+      "slug": "zong-he-lei",
+      "order": 5
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "chinese": "书",
+      "pinyin": "shū",
+      "english": "book",
+      "measure_word": "本",
+      "example": "一本书",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "chinese": "笔",
+      "pinyin": "bǐ",
+      "english": "pen",
+      "measure_word": "支",
+      "example": "一支笔",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "chinese": "杯子",
+      "pinyin": "bēi zi",
+      "english": "cup",
+      "measure_word": "个",
+      "example": "一个杯子",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 4,
+    "fields": {
+      "category": 1,
+      "chinese": "手机",
+      "pinyin": "shǒu jī",
+      "english": "phone",
+      "measure_word": "部",
+      "example": "一部手机",
+      "order": 4
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 5,
+    "fields": {
+      "category": 1,
+      "chinese": "包",
+      "pinyin": "bāo",
+      "english": "bag",
+      "measure_word": "个",
+      "example": "一个包",
+      "order": 5
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 6,
+    "fields": {
+      "category": 1,
+      "chinese": "桌子",
+      "pinyin": "zhuō zi",
+      "english": "table",
+      "measure_word": "张",
+      "example": "一张桌子",
+      "order": 6
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 7,
+    "fields": {
+      "category": 1,
+      "chinese": "椅子",
+      "pinyin": "yǐ zi",
+      "english": "chair",
+      "measure_word": "把",
+      "example": "一把椅子",
+      "order": 7
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 8,
+    "fields": {
+      "category": 1,
+      "chinese": "灯",
+      "pinyin": "dēng",
+      "english": "lamp",
+      "measure_word": "盏",
+      "example": "一盏灯",
+      "order": 8
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 9,
+    "fields": {
+      "category": 1,
+      "chinese": "纸",
+      "pinyin": "zhǐ",
+      "english": "paper",
+      "measure_word": "张",
+      "example": "一张纸",
+      "order": 9
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 10,
+    "fields": {
+      "category": 2,
+      "chinese": "水",
+      "pinyin": "shuǐ",
+      "english": "water",
+      "measure_word": "杯",
+      "example": "一杯水",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 11,
+    "fields": {
+      "category": 2,
+      "chinese": "米饭",
+      "pinyin": "mǐ fàn",
+      "english": "rice",
+      "measure_word": "碗",
+      "example": "一碗米饭",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 12,
+    "fields": {
+      "category": 2,
+      "chinese": "面条",
+      "pinyin": "miàn tiáo",
+      "english": "noodles",
+      "measure_word": "碗",
+      "example": "一碗面条",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 13,
+    "fields": {
+      "category": 2,
+      "chinese": "苹果",
+      "pinyin": "píng guǒ",
+      "english": "apple",
+      "measure_word": "个",
+      "example": "一个苹果",
+      "order": 4
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 14,
+    "fields": {
+      "category": 2,
+      "chinese": "茶",
+      "pinyin": "chá",
+      "english": "tea",
+      "measure_word": "杯",
+      "example": "一杯茶",
+      "order": 5
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 15,
+    "fields": {
+      "category": 3,
+      "chinese": "衣服",
+      "pinyin": "yī fu",
+      "english": "clothes",
+      "measure_word": "件",
+      "example": "一件衣服",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 16,
+    "fields": {
+      "category": 3,
+      "chinese": "鞋子",
+      "pinyin": "xié zi",
+      "english": "shoes",
+      "measure_word": "双",
+      "example": "一双鞋",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 17,
+    "fields": {
+      "category": 3,
+      "chinese": "黑色",
+      "pinyin": "hēi sè",
+      "english": "black",
+      "measure_word": "",
+      "example": "黑色的衣服",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 18,
+    "fields": {
+      "category": 3,
+      "chinese": "白色",
+      "pinyin": "bái sè",
+      "english": "white",
+      "measure_word": "",
+      "example": "白色的鞋",
+      "order": 4
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 19,
+    "fields": {
+      "category": 4,
+      "chinese": "车",
+      "pinyin": "chē",
+      "english": "car",
+      "measure_word": "辆",
+      "example": "一辆车",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 20,
+    "fields": {
+      "category": 4,
+      "chinese": "公交车",
+      "pinyin": "gōng jiāo chē",
+      "english": "bus",
+      "measure_word": "辆",
+      "example": "一辆公交车",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 21,
+    "fields": {
+      "category": 4,
+      "chinese": "地铁",
+      "pinyin": "dì tiě",
+      "english": "subway",
+      "measure_word": "条",
+      "example": "一条地铁线",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 22,
+    "fields": {
+      "category": 4,
+      "chinese": "飞机",
+      "pinyin": "fēi jī",
+      "english": "plane",
+      "measure_word": "架",
+      "example": "一架飞机",
+      "order": 4
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 23,
+    "fields": {
+      "category": 4,
+      "chinese": "火车",
+      "pinyin": "huǒ chē",
+      "english": "train",
+      "measure_word": "列",
+      "example": "一列火车",
+      "order": 5
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 24,
+    "fields": {
+      "category": 5,
+      "chinese": "电脑",
+      "pinyin": "diàn nǎo",
+      "english": "computer",
+      "measure_word": "台",
+      "example": "一台电脑",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 25,
+    "fields": {
+      "category": 5,
+      "chinese": "房间",
+      "pinyin": "fáng jiān",
+      "english": "room",
+      "measure_word": "间",
+      "example": "一间房间",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 26,
+    "fields": {
+      "category": 5,
+      "chinese": "食物",
+      "pinyin": "shí wù",
+      "english": "food",
+      "measure_word": "",
+      "example": "很多食物",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 27,
+    "fields": {
+      "category": 5,
+      "chinese": "水果",
+      "pinyin": "shuǐ guǒ",
+      "english": "fruit",
+      "measure_word": "",
+      "example": "新鲜水果",
+      "order": 4
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 28,
+    "fields": {
+      "category": 6,
+      "chinese": "镜子",
+      "pinyin": "jìng zi",
+      "english": "mirror",
+      "measure_word": "面",
+      "example": "一面镜子",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 29,
+    "fields": {
+      "category": 6,
+      "chinese": "钥匙",
+      "pinyin": "yào shi",
+      "english": "key",
+      "measure_word": "把",
+      "example": "一把钥匙",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 30,
+    "fields": {
+      "category": 6,
+      "chinese": "毛巾",
+      "pinyin": "máo jīn",
+      "english": "towel",
+      "measure_word": "条",
+      "example": "一条毛巾",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 31,
+    "fields": {
+      "category": 6,
+      "chinese": "雨伞",
+      "pinyin": "yǔ sǎn",
+      "english": "umbrella",
+      "measure_word": "把",
+      "example": "一把雨伞",
+      "order": 4
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 32,
+    "fields": {
+      "category": 7,
+      "chinese": "本子",
+      "pinyin": "běn zi",
+      "english": "notebook",
+      "measure_word": "本",
+      "example": "一本本子",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 33,
+    "fields": {
+      "category": 7,
+      "chinese": "尺子",
+      "pinyin": "chǐ zi",
+      "english": "ruler",
+      "measure_word": "把",
+      "example": "一把尺子",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 34,
+    "fields": {
+      "category": 7,
+      "chinese": "字典",
+      "pinyin": "zì diǎn",
+      "english": "dictionary",
+      "measure_word": "本",
+      "example": "一本字典",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 35,
+    "fields": {
+      "category": 7,
+      "chinese": "地图",
+      "pinyin": "dì tú",
+      "english": "map",
+      "measure_word": "张",
+      "example": "一张地图",
+      "order": 4
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 36,
+    "fields": {
+      "category": 8,
+      "chinese": "菜",
+      "pinyin": "cài",
+      "english": "vegetable",
+      "measure_word": "盘",
+      "example": "一盘菜",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 37,
+    "fields": {
+      "category": 8,
+      "chinese": "肉",
+      "pinyin": "ròu",
+      "english": "meat",
+      "measure_word": "块",
+      "example": "一块肉",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 38,
+    "fields": {
+      "category": 8,
+      "chinese": "鸡蛋",
+      "pinyin": "jī dàn",
+      "english": "egg",
+      "measure_word": "个",
+      "example": "一个鸡蛋",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 39,
+    "fields": {
+      "category": 8,
+      "chinese": "牛奶",
+      "pinyin": "niú nǎi",
+      "english": "milk",
+      "measure_word": "盒",
+      "example": "一盒牛奶",
+      "order": 4
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 40,
+    "fields": {
+      "category": 9,
+      "chinese": "球",
+      "pinyin": "qiú",
+      "english": "ball",
+      "measure_word": "个",
+      "example": "一个球",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 41,
+    "fields": {
+      "category": 9,
+      "chinese": "自行车",
+      "pinyin": "zì xíng chē",
+      "english": "bike",
+      "measure_word": "辆",
+      "example": "一辆自行车",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 42,
+    "fields": {
+      "category": 10,
+      "chinese": "商品",
+      "pinyin": "shāng pǐn",
+      "english": "product",
+      "measure_word": "件",
+      "example": "一件商品",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 43,
+    "fields": {
+      "category": 10,
+      "chinese": "礼物",
+      "pinyin": "lǐ wù",
+      "english": "gift",
+      "measure_word": "份",
+      "example": "一份礼物",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 44,
+    "fields": {
+      "category": 10,
+      "chinese": "玩具",
+      "pinyin": "wán jù",
+      "english": "toy",
+      "measure_word": "个",
+      "example": "一个玩具",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 45,
+    "fields": {
+      "category": 11,
+      "chinese": "遥控器",
+      "pinyin": "yáo kòng qì",
+      "english": "remote",
+      "measure_word": "个",
+      "example": "一个遥控器",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 46,
+    "fields": {
+      "category": 11,
+      "chinese": "垃圾桶",
+      "pinyin": "lā jī tǒng",
+      "english": "trash can",
+      "measure_word": "个",
+      "example": "一个垃圾桶",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 47,
+    "fields": {
+      "category": 11,
+      "chinese": "衣架",
+      "pinyin": "yī jià",
+      "english": "hanger",
+      "measure_word": "个",
+      "example": "一个衣架",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 48,
+    "fields": {
+      "category": 12,
+      "chinese": "电梯",
+      "pinyin": "diàn tī",
+      "english": "elevator",
+      "measure_word": "部",
+      "example": "一部电梯",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 49,
+    "fields": {
+      "category": 12,
+      "chinese": "网络",
+      "pinyin": "wǎng luò",
+      "english": "internet",
+      "measure_word": "",
+      "example": "网络很好",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 50,
+    "fields": {
+      "category": 13,
+      "chinese": "乐器",
+      "pinyin": "yuè qì",
+      "english": "instrument",
+      "measure_word": "件",
+      "example": "一件乐器",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 51,
+    "fields": {
+      "category": 13,
+      "chinese": "杂志",
+      "pinyin": "zá zhì",
+      "english": "magazine",
+      "measure_word": "本",
+      "example": "一本杂志",
+      "order": 2
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 52,
+    "fields": {
+      "category": 13,
+      "chinese": "电影票",
+      "pinyin": "diàn yǐng piào",
+      "english": "movie ticket",
+      "measure_word": "张",
+      "example": "一张电影票",
+      "order": 3
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 53,
+    "fields": {
+      "category": 14,
+      "chinese": "垃圾",
+      "pinyin": "lā jī",
+      "english": "trash",
+      "measure_word": "堆",
+      "example": "一堆垃圾",
+      "order": 1
+    }
+  },
+  {
+    "model": "vocabulary.word",
+    "pk": 54,
+    "fields": {
+      "category": 14,
+      "chinese": "药品",
+      "pinyin": "yào pǐn",
+      "english": "medicine",
+      "measure_word": "盒",
+      "example": "一盒药品",
+      "order": 2
+    }
+  }
+]
