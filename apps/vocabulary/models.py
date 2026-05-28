@@ -30,6 +30,8 @@ class Level(models.Model):
         super().save(*args, **kwargs)
 
     class Meta:
+        verbose_name = "级别"
+        verbose_name_plural = "级别"
         ordering = ['order']
 
     def __str__(self):
@@ -51,8 +53,10 @@ class Category(models.Model):
         super().save(*args, **kwargs)
 
     class Meta:
+        verbose_name = "分类"
+        verbose_name_plural = "分类"
         ordering = ['level__order', 'order']
-        verbose_name_plural = 'Categories'
+
 
     def __str__(self):
         return f'{self.level.name} - {self.name}'
